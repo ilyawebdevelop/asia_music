@@ -1,0 +1,56 @@
+.projects {
+  &Slider {
+    overflow: visible;
+    &Sect {
+      overflow: hidden;
+    }
+  }
+  &Card {
+    &Content {
+      padding-top: 20px;
+      @media(max-width: 575px){
+        padding-top: 10px;
+      }
+    }
+    &Img {
+    
+      img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 4px;
+        transition: box-shadow .2s linear;
+        @media(max-width: 1400px){
+          height: 300px;
+        }
+        @media(max-width: 767px){
+          height: 250px;
+        }
+        @media(max-width: 575px){
+          height: 45vw;
+        }
+        &:hover {
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    &Title {
+      font-size: 20px;
+      line-height: 30px;
+      transition: color .2s linear;
+      @media(max-width: 575px){
+        font-size: 14px;
+        line-height: 20px;
+      }
+      &:hover {
+        color: var(--primary);
+      }
+      &--sm-20 {
+        @media(max-width: 575px){
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Проектирование"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				@@include('html/projecting/intro.html',{})
+				@@include('html/projecting/content.html',{})		
+				@@include('html/projects.html',{})		
+				@@include('html/reviews-gray.html',{})		
+				@@include('html/news-white.html',{})		
+				@@include('html/services/list.html',{})		
+
+				@@include('html/callback-transparent.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

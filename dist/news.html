@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Новости</title>
+</head>
+
+<body>
+
+	<div class="pageGrid">
+		<div class="menuPages">
+  <div class="mob-menu-overlay"></div>
+  <div class="menu flex-column justify-content-between gap-5">
+    <div class="menuT">
+      <div class="d-flex justify-content-between menuLogoW">
+        <a href="#" class="logo menuLogo">
+          <img src="img/admin/logo/logo.png" alt="logo">
+        </a>
+        <div class="headerNavCloseBtn d-flex d-lg-none">
+          <img src="img/icons/close.svg" alt="close">
+        </div>
+      </div>
+  
+      <nav class="menuNav">
+        <ul>
+          <li>
+            <a href="#">
+              Компания
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Каталог
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              Услуги и сервис
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Пресс-центр
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Контакты
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /menuT -->
+  
+    <div class="menuB">
+  
+      <nav class="menuNav">
+        <ul>
+          <li>
+            <button class="menuSearchBtn d-flex justify-content-start w-100">
+              <img src="img/icons/search.svg" alt="search">
+              Поиск по сайту
+            </button>
+          </li>
+          <li>
+            <a href="tel:+791234567890" class="menuPhone justify-content-start">
+              <img src="img/icons/phone.svg" alt="phone">
+              8 123 456 7890
+            </a>
+          </li>
+          <li>
+            <button class="menuOrderBtn d-flex justify-content-start w-100" data-fancybox data-src="#modalOrder">
+              <img src="img/icons/message.svg" alt="search">
+              Обратная связь
+            </button>
+          </li>
+        </ul>
+      </nav>
+  
+  
+    </div><!-- /menuB -->
+  
+  </div>
+</div>
+
+		<div class="wrapper">
+			<!-- Header -->
+<header class="header header--standart" id="header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="tel:+791234567890" class="d-none d-lg-block phone phone--primary fw-medium">8 123 456 7890</a>
+      <div class="d-none d-lg-flex gap-3">
+        <button class="searchBtn searchBtn--primary"></button>
+        <button class="headerBtn button button--sm button--purple" data-src="#modalOrder" data-fancybox>Обратная связь</button>
+      </div>
+      <a href="#" class="logo menuLogo d-block d-lg-none mb-0 px-0">
+        <img src="img/admin/logo/logo.png" alt="logo">
+      </a>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+    </div>
+  </div>
+  <form class="headerFixSearchW" action="#">
+    <div class="d-flex justify-content-between">
+      <input type="search" class="headerSearchInput" placeholder="Поиск">
+      <div class="d-flex align-items-center">
+
+        <!-- searchDrop -->
+        <div class="dropdown searchDrop">
+          <button class="button searchDropOutput dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            По всему сайту
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">По всему сайту</button></li>
+            <li><button class="dropdown-item" type="button">По каталогу</button></li>
+            <li><button class="dropdown-item" type="button">По услугам</button></li>
+          </ul>
+        </div>
+
+        <button class="headerFixSearchBtn" type="submit">
+          <img src="img/icons/search-purple.svg" alt="search">
+        </button>
+        <button class="headerFixCloseBtn" type="button">
+          <img src="img/icons/fixed-close.svg" alt="close">
+        </button>
+      </div>
+    </div>
+  </form>
+</header>
+			<main class="main">
+				<section class="breadcrumbsSect py-0" id="breadcrumbs">
+  <div class="container">
+    <div class="breadcrumbs">
+      <ul>
+        <li>
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <a href="#">
+            Компания
+          </a>
+        </li>
+        <li>
+          <span class="sep">
+            /
+          </span>
+        </li>
+        <li>
+          <span>
+            Юбилей думы Иркутска: 30 лет командной работы в интересах города
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+				<section class="sect pt-0 overflow-hidden">
+  <div class="container">
+
+    <div
+      class="d-flex justify-content-between flex-wrap gap-2 gap-sm-3 align-items-start align-items-sm-center flex-column flex-sm-row">
+
+      <h1 class="h1">
+        Новости
+      </h1>
+
+      <div class="d-flex align-items-center gap-2 gap-sm-3 sm-hide sortW newsSortW">
+        <span class="d-none d-sm-block">
+          Сортировать по:
+        </span>
+        <select name="newsSort" id="newsSort" class="formSelect newsSort">
+          <option value="brand_2">Дате публикации</option>
+          <option value="brand_1">Категория 1</option>
+          <option value="change_brand">Сначала популярные</option>
+        </select>
+      </div>
+    </div>
+
+
+
+    <div class="newsGrid mt-5">
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-1.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            27 марта 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-2.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            31 января 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-3.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            09 февраля 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Форум «Сильные идеи для нового времени»
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-3.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            09 февраля 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-1.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            27 марта 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-2.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            31 января 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-1.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            27 марта 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-2.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            31 января 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-1.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            27 марта 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+      <div class="newsCard">
+        <a href="#" class="newsCardImg">
+          <img src="img/admin/news/image-2.jpg" alt="image">
+        </a>
+        <div class="newsCardContent">
+          <div class="text--sm mt-3 mb-2 color--gray">
+            31 января 2024
+          </div>
+          <a href="#" class="newsCardTitle fw-semibold mt-0">
+            Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+          </a>
+        </div>
+      </div><!-- /newsCard -->
+    </div>
+
+    <button class="button button--transparent-gray mx-auto buttonLoadMore mt-4">
+      Загрузить ещё
+    </button>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</section>		
+				<section class="sect callback bg--light-light-gray">
+  <div class="container">
+    <div class="row mb-2 mb-md-3 mb-lg-4 pb-0 pb-lg-3">
+      <div class="col-lg-6">
+        <h2 class="h2 color--primary mb-3 mb-lg-0" style="max-width: 420px;">
+          Оформите заявку
+        </h2>
+      </div>
+      <div class="col-lg-6">
+        <div class="content content--sm-14">
+          <p>
+            Мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.
+          </p>
+        </div>
+      </div>
+    </div>
+    <form class="form" action="#">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--light-light-gray" id="callbackName" placeholder="Ваше имя">
+            <label for="floatingInput">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--light-light-gray" id="callbackPhone" placeholder="Email или Телефон для связи">
+            <label for="floatingInput">Email или Телефон для связи</label>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mt-md-4 mt-lg-3">
+          <div class="d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between">
+            <div class="agreement">
+              <input type="checkbox" id="callbackAgreement" hidden checked>
+              <label class="checkboxW" for="callbackAgreement">
+                <div class="rect">
+
+                </div>
+                <div class="agreementText">
+                  Подтверждаю, что согласен/согласна с <a href="#" target="_blank">политикой конфиденциальности</a>
+                </div>
+              </label>
+            </div>
+            <button class="button button--purple formBtn width-sm-100">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+			</main>
+			<!-- Footer -->
+<footer class="footer color--white" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <nav class="footerNav">
+          <ul>
+            <li>
+              <a href="#">
+                Компания
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Клиентам
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Пресс-центр
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-4">
+        <a href="tel:+791234567890" class="footerPhone mb-3">8 123 456 7890</a>
+        <a href="mailto:info@asiamusic.ru" class="footerMail mb-3">info@asiamusic.ru</a>
+        <a href="#" class="footerAddress" target="_blank">
+          г. Иркутск, п. Дзержинск, ул. Ушаковская, 3А
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="socials mb-3">
+          <ul class="d-flex gap-3 justify-content-center justify-content-md-start">
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/vk.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/youtube.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div><!-- /socials-->
+
+        <button class="footerLink mb-3" data-src="#modalOrder" data-fancybox>Задать вопрос</button>
+        <a class="footerLink footerPolitic">Политика конфиденциальности</a>
+
+      </div>
+    </div>
+    <div class="row mt-6 text--sm">
+      <div class="col">
+        <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row gap-3">
+          <div class="copyright">
+            2024 © «Азия Мьюзик Компани»
+          </div>
+          <a class="footerDevelop d-flex gap-2" href="#" target="_blank">
+            <img src="img/icons/develop.svg" alt="icon">
+            <p>
+              Разработка сайта – Вангер.рф
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+			<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h2 class="h2 color--white">Оформите заявку</h2>
+    <p class="modalDescr color--white">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <form class="modalForm" action="#">
+
+      <div class="row">
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderName" placeholder="Ваше имя">
+            <label for="modalOrderName">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderPhone"
+              placeholder="Email или Телефон для связи">
+            <label for="modalOrderPhone">Email или Телефон для связи</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="button button--white formBtn width-sm-100 text-nowrap mt-4">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- vacancy -->
+<div class="modal" id="modalVacancy">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="color--gray mb-4 mb-lg-5">
+      Иркутск
+    </div>
+    <h3 class="h3 h3-sm-h4 mb-3 pb-1">
+      Сборщик в деревообрабатывающем цехе
+    </h3>
+    <div class="d-flex gap-1 gap-md-3 flex-column flex-md-row">
+      <h4 class="h4 h4-sm-h5 fw-bold">
+        от 38 000 до 44 000 ₽
+      </h4>
+      <div class="vacancyCardWork mb-3">
+        <ul class="gap-2 d-flex flex-wrap">
+          <li class="text--extra-sm">
+            Опыт работы:  1–3 года
+          </li>
+          <li>
+            частичная занятость
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content mt-3 text-sm-14">
+      <p>
+        Работа в поселке Дзержинск (15 минут от Аэропорта)
+      </p>
+      <p>
+        Обязанности
+      </p>
+      <p>
+        ·         Работа по сборке кресел зрительного зала.
+      </p>
+      <p>
+        Требования:
+      </p>
+      <p>
+        ·         Образование не ниже средне-специального;
+      </p>
+      <p>
+        ·         Опыт работы с мебелью желателен.
+      </p>
+      <p>
+        Условия:
+      </p>
+      <p>
+        ·         Официальное трудоустройство;
+      </p>
+      <p>
+        ·         Полный социальный пакет, стабильная заработная плата.
+      </p>
+
+    </div>
+
+    <button class="button button--purple ml-auto width-sm-100 mt-4 mt-lg-5" data-src="#modalVacancyOrder" data-fancybox>
+      Откликнуться
+    </button>
+
+  </div>
+</div>
+
+<!-- modalVacancyOrder -->
+<div class="modal" id="modalVacancyOrder">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="color--gray mb-4 mb-lg-5">
+      Иркутск
+    </div>
+    <h3 class="h3 h3-sm-h4 mb-3 pb-1">
+      Сборщик в деревообрабатывающем цехе
+    </h3>
+    <div class="d-flex gap-1 gap-md-3 flex-column flex-md-row">
+      <h4 class="h4 h4-sm-h5 fw-bold">
+        от 38 000 до 44 000 ₽
+      </h4>
+      <div class="vacancyCardWork mb-3">
+        <ul class="gap-2 d-flex flex-wrap">
+          <li class="text--extra-sm">
+            Опыт работы:  1–3 года
+          </li>
+          <li>
+            частичная занятость
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <form action="#" class="form modalForm mt-3">
+
+      <div class="row">
+        <div class="col-lg-6 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="modalVacName" placeholder="Ваше имя">
+            <label for="modalVacName">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="modalVacPhone" placeholder="Email или Телефон для связи">
+            <label for="modalVacPhone">Email или Телефон для связи</label>
+          </div>
+        </div>
+        <div class="col-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <textarea class="form-control" id="modalVacTextarea" placeholder="Текст резюме"
+              style="height: 130px"></textarea>
+            <label for="modalVacTextarea">Текст резюме</label>
+          </div>
+        </div>
+
+        <input type="file" id="vacancyFile" onchange="showFile(this)" style="display: none;">
+        <label class="d-flex gap-2 vacancyFileLabel" for="vacancyFile">
+          <img src="img/icons/file.svg" alt="icon">
+          <span class="color--gray">Прикрепить резюме</span>
+        </label>
+        <div class="vacFileOutput">
+
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 mt-5">
+        <div class="agreement mt-0">
+          <input type="checkbox" id="modalVacAgreement" hidden checked>
+          <label class="checkboxW align-items-center" for="modalVacAgreement">
+            <div class="rect">
+
+            </div>
+            <div class="agreementText">
+              Подтверждаю, что согласен/согласна с <a href="#" target="_blank">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--purple formBtn width-sm-100 text-nowrap">
+          Отправить отклик
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function showFile(input) {
+    let file = input.files[0];
+    let vacFileOutput = document.querySelector('.vacFileOutput');
+    vacFileOutput.textContent = `Загружено: ${file.name}`;
+  }
+</script>
+
+<!-- modalFilter -->
+<div class="modal" id="modalFilter">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <nav class="menuNav">
+      <ul>
+        <li>
+          <h5>
+            Фильтры
+          </h5>
+        </li>
+        <li>
+          <button class="accordNavHead active">
+            Цена
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody" style="display: block;">
+            <div class="d-flex gap-2">
+              <div class="mb-3 w-50">
+                <input type="text" class="form-control px-2" id="priceFrom" placeholder="От"
+                  style="height: 40px; box-sizing: border-box;">
+              </div>
+              <div class="mb-3 w-50">
+                <input type="text" class="form-control px-2" id="priceFrom" placeholder="До"
+                  style="height: 40px; box-sizing: border-box;">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="accordNavHead active">
+            Фильтр
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody" style="display: block;">
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_11" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_11">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_12" hidden checked>
+              <label class="d-flex gap-2 align-items-start" for="filter_12">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр 2
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_13" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_13">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр 3
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem">
+              <input type="checkbox" id="filter_15" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_15">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр длинное название в неск строк
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+          </div>
+        </li>
+        <li>
+          <button class="accordNavHead">
+            Фильтр 1
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody">
+            <div class="d-flex">
+              <div class="accordNavCheckboxItem mb-3">
+                <input type="checkbox" id="filter_24" hidden>
+                <label class="d-flex gap-2 align-items-start" for="filter_24">
+                  <div class="rect"></div>
+                  <div class="accordNavCheckboxText">
+                    Фильтр 4
+                  </div>
+                </label>
+              </div><!-- /accordNavCheckboxItem -->
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+
+  </div>
+</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

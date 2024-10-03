@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Фортепиано “Соната”</title>
+</head>
+
+<body>
+
+	<div class="pageGrid">
+		<div class="menuPages">
+  <div class="mob-menu-overlay"></div>
+  <div class="menu flex-column justify-content-between gap-5">
+    <div class="menuT">
+      <div class="d-flex justify-content-between menuLogoW">
+        <a href="#" class="logo menuLogo">
+          <img src="img/admin/logo/logo.png" alt="logo">
+        </a>
+        <div class="headerNavCloseBtn d-flex d-lg-none">
+          <img src="img/icons/close.svg" alt="close">
+        </div>
+      </div>
+  
+      <nav class="menuNav">
+        <ul>
+          <li>
+            <a href="#">
+              Компания
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Каталог
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li class="active">
+            <a href="#">
+              Услуги и сервис
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Пресс-центр
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Контакты
+              <img src="img/icons/nav-arrow.svg" alt="arrow">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div><!-- /menuT -->
+  
+    <div class="menuB">
+  
+      <nav class="menuNav">
+        <ul>
+          <li>
+            <button class="menuSearchBtn d-flex justify-content-start w-100">
+              <img src="img/icons/search.svg" alt="search">
+              Поиск по сайту
+            </button>
+          </li>
+          <li>
+            <a href="tel:+791234567890" class="menuPhone justify-content-start">
+              <img src="img/icons/phone.svg" alt="phone">
+              8 123 456 7890
+            </a>
+          </li>
+          <li>
+            <button class="menuOrderBtn d-flex justify-content-start w-100" data-fancybox data-src="#modalOrder">
+              <img src="img/icons/message.svg" alt="search">
+              Обратная связь
+            </button>
+          </li>
+        </ul>
+      </nav>
+  
+  
+    </div><!-- /menuB -->
+  
+  </div>
+</div>
+
+		<div class="wrapper">
+			<!-- Header -->
+<header class="header header--absolute" id="header">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="tel:+791234567890" class="d-none d-lg-block phone phone--white fw-medium">8 123 456 7890</a>
+      <div class="d-none d-lg-flex gap-3">
+        <button class="searchBtn searchBtn--white"></button>
+        <button class="headerBtn button button--sm button--transparent-white" data-src="#modalOrder"
+          data-fancybox>Обратная связь</button>
+      </div>
+      <a href="#" class="logo menuLogo d-block d-lg-none mb-0 px-0">
+        <img src="img/admin/logo/logo.png" alt="logo">
+      </a>
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+    </div>
+  </div>
+
+  <form class="headerFixSearchW" action="#">
+    <div class="d-flex justify-content-between">
+      <input type="search" class="headerSearchInput" placeholder="Поиск">
+      <div class="d-flex align-items-center">
+
+        <!-- searchDrop -->
+        <div class="dropdown searchDrop">
+          <button class="button searchDropOutput dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            По всему сайту
+          </button>
+          <ul class="dropdown-menu">
+            <li><button class="dropdown-item" type="button">По всему сайту</button></li>
+            <li><button class="dropdown-item" type="button">По каталогу</button></li>
+            <li><button class="dropdown-item" type="button">По услугам</button></li>
+          </ul>
+        </div>
+
+        <button class="headerFixSearchBtn" type="submit">
+          <img src="img/icons/search-purple.svg" alt="search">
+        </button>
+        <button class="headerFixCloseBtn" type="button">
+          <img src="img/icons/fixed-close.svg" alt="close">
+        </button>
+      </div>
+    </div>
+  </form>
+</header>
+			<main class="main">
+				<section class="sect intro introPage" style="background-image: url('img/admin/cat/intro.jpg');">
+
+  <div class="container d-flex flex-column justify-content-between h-100">
+    <div class="d-block">
+      <section class="breadcrumbsSect py-0" id="breadcrumbs">
+
+  <div class="breadcrumbs breadcrumbs--white">
+    <ul>
+      <li>
+        <a href="#">
+          Главная
+        </a>
+      </li>
+      <li>
+        <span class="sep">
+          /
+        </span>
+      </li>
+      <li>
+        <a href="#">
+          Компания
+        </a>
+      </li>
+      <li>
+        <span class="sep">
+          /
+        </span>
+      </li>
+      <li>
+        <span>
+          Юбилей думы Иркутска: 30 лет командной работы в интересах города
+        </span>
+      </li>
+    </ul>
+  </div>
+
+</section>
+      <div class="introTitle color--white fw-bold sectHead" style="max-width: 670px;">
+        Фортепиано “Соната”
+      </div>
+      <p class="text--lg color--white introDescr d-none d-lg-block" style="max-width: 690px;">
+        Наша фабрика располагается в г. Иркутске, и фортепианный цех насчитывает 4 500 кв. м. площадей, оснащенных
+        современными станками и необходимым технологическим оборудованием. Мы извлекаем преимущество из местоположения
+        своей фабрики.
+      </p>
+    </div>
+  <button class="button button--purple">
+    Оставить заявку
+  </button>
+  </div>
+
+</section>
+
+<section class="introMobile d-block d-lg-none pb-0">
+  <div class="container">
+    <p class="text--lg">
+      Наша фабрика располагается в г. Иркутске, и фортепианный цех насчитывает 4 500 кв. м. площадей, оснащенных
+        современными станками и необходимым технологическим оборудованием. Мы извлекаем преимущество из местоположения
+        своей фабрики.
+    </p>
+  </div>
+</section>
+				<section class="sect">
+  <div class="container">
+    <h2 class="sectHead h2">
+      Каталог
+    </h2>
+    <nav class="catNav">
+      <ul>
+        <li>
+          <a class="bg--light-light-gray" href="#">
+            Рояли
+          </a>
+        </li>
+        <li>
+          <a class="bg--light-light-gray" href="#">
+            Пианино
+          </a>
+        </li>
+        <li>
+          <a class="bg--light-light-gray" href="#">
+            Кресла дла конференц-залов
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="productGrid productGrid--four">
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-2.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-112
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-1.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-121 Акустическое пианино Соната ПН-121
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-4.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-125
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-2.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-112
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-1.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-121 Акустическое пианино Соната ПН-121
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-7.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-125
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-8.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            ALINA Баргузин Кино
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+      <a class="productCard" href="#">
+        <div class="productCardImg">
+          <img src="img/admin/product/image-1.png" alt="image">
+        </div>
+        <div class="productCardContent">
+          <h5 class="h5 productCardTitle">
+            Акустическое пианино Соната ПН-121 Акустическое пианино Соната ПН-121
+          </h5>
+        </div><!-- /productCardContent -->
+      </a><!-- /productCard -->
+
+    </div>
+    <button class="button button--transparent-gray mx-auto buttonLoadMore mt-4 mt-sm-5">
+      Загрузить ещё
+    </button>
+
+  </div>
+</section>
+				<section class="sect pt-0 pb-0 overflow-hidden">
+  <div class="container">
+    <h2 class="h2 mb-4">
+      Акустические пианино и рояли «Соната»
+    </h2>
+    <div class="content content--lg content--lg-sm-16">
+      <p>
+        Большой выбор качественных кресел для зрительного зала от российского производителя - фабрики "Азия Мьюзик
+        Компани", системообразующего предприятия России. Широкий модельный ряд включает в себя все возможные категории
+        кресел для оснащения объектов образования, культуры, досуга и спортивных арен. Благодаря наличию собственной
+        модернизированного производства по изготовлению театрально-концертного оборудования наша компания в короткие
+        сроки выполняет заказы даже самых взыскательных клиентов. Если вы не увидели в нашем каталоге подходящую модель,
+        мы сможем изготовить кресла для вашего объекта по индивидуальным эскизам.
+      </p>
+
+      <h3 class="h3 h3-sm-h4 mb-4 mt-6">
+        Первый канал: "Наше всё" на фабрике "Азия Мьюзик Компани"
+      </h3>
+      <div class="video my-4">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sg1VdsHY2N0?si=ezERe6sBD4BmXk39"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <p class="text-sm-14">
+        Фабрику театрально-концертного оборудования посетила команда научно-познавательного проекта Первого канала "Наше
+        всё". Мы рассказали о производстве акустических пианино и роялей "Соната" в России.
+      </p>
+    </div><!-- /content -->
+
+    <div class="cehaGal cehaGalSliderSect overflow-visible">
+
+
+      <div class="d-flex justify-content-between align-items-center mt-6 width-sm-100">
+        <h3 class="h3 mb-0 h3-sm-h4">
+          Фотографии с производства
+        </h3>
+        <div class="navArrowW d-none d-sm-flex position-static">
+          <button class="navArrow navArrowPrev">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="navArrow navArrowNext">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div><!-- /navArrowW -->
+      </div>
+
+      <div class="swiper cehaGalSlider mb-0 mb-lg-4 mt-4">
+        <div class="swiper-wrapper">
+
+          <a class="swiper-slide cehaGalSlide" href="img/admin/gal/image-1.jpg" data-fancybox="gal_1">
+            <img src="img/admin/gal/image-1.jpg" alt="image">          
+          </a><!-- /cehaGalSlide -->
+
+          <a class="swiper-slide cehaGalSlide" href="img/admin/gal/image-2.jpg" data-fancybox="gal_1">
+            <img src="img/admin/gal/image-2.jpg" alt="image">           
+          </a><!-- /cehaGalSlide -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+				<section class="sect projectsSliderSect">
+  <div class="container">
+    <div class="row mb-2 mb-lg-5">
+      <div class="col-lg-6 mb-3 mb-lg-0">
+        <h2 class="h2" style="max-width: 450px;">
+          Реализованные проекты
+        </h2>
+      </div>
+      <div class="col-lg-6">
+        <div class="content content--lg content--lg-sm-16">
+          <p>
+            За 30 лет работы в данной сфере, был накоплен опыт реализации более 1 000 проектов по всей стране и ближнему
+            зарубежью.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper projectsSlider mb-0 mb-lg-5">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide projectsSlide">
+          <div class="projectsCard">
+            <a href="#" class="projectsCardImg">
+              <img src="img/admin/projects/image-1.jpg" alt="image">
+            </a>
+            <div class="projectsCardContent">
+              <a href="#" class="projectsCardTitle fw-semibold">
+                Театры и филармонии
+              </a>
+            </div>
+          </div>
+        </div><!-- /projectsSlide -->
+
+        <div class="swiper-slide projectsSlide">
+          <div class="projectsCard">
+            <a href="#" class="projectsCardImg">
+              <img src="img/admin/projects/image-2.jpg" alt="image">
+            </a>
+            <div class="projectsCardContent">
+              <a href="#" class="projectsCardTitle fw-semibold">
+                Образовательные учреждения
+              </a>
+            </div>
+          </div>
+        </div><!-- /projectsSlide -->
+
+        <div class="swiper-slide projectsSlide">
+          <div class="projectsCard">
+            <a href="#" class="projectsCardImg">
+              <img src="img/admin/projects/image-3.jpg" alt="image">
+            </a>
+            <div class="projectsCardContent">
+              <a href="#" class="projectsCardTitle fw-semibold">
+                Центры и дома культуры
+              </a>
+            </div>
+          </div>
+        </div><!-- /projectsSlide -->
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="d-flex justify-content-between mt-4 width-sm-100">
+          <div class="content content--lg content--lg-sm-14">
+            <p class="mb-0">
+              Среди значимых проектов такие, как Президентский центр Б. Ельцина (г. Екатеринбург), Храм Христа спасителя
+              (г.
+              Москва), Московский государственный академический театр танца «Гжель» (г. Москва), Государственный русский
+              драматический театр им. Бестужева, Ледовые Арены «Байкал» (г. Иркутск) и «Кузбасс» (г. Кемерово), Центр
+              управления перевозками РЖД, «Одора» - дом Офицеров Восточного Военного Округа (г. Хабаровск), кинофикация
+              24-х
+              цирков по всей стране.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3">
+        <div class="navArrowW d-none d-sm-flex justify-content-end">
+          <button class="navArrow navArrowPrev">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+            </svg>
+          </button>
+          <button class="navArrow navArrowNext">
+            <svg>
+              <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+            </svg>
+          </button>
+        </div><!-- /navArrowW -->
+      </div>
+    </div>
+
+    <div
+    class="d-flex align-items-start align-items-md-center fw-semibold gap-2 gap-sm-3 gap-md-4 flex-column flex-md-row width-sm-100 mt-6">
+    <a href="#" class="button button--purple button--arrow gap-3 width-sm-100">
+      Все проекты
+      <div class="arrowBtnW">
+        <img src="img/icons/arrow-btn-white.svg" alt="arrow">
+      </div>
+    </a>
+    <a href="#" class="link width-sm-100">Благодарности</a>
+  </div>
+
+  </div>
+</section>
+				<section class="sect bg--deepdark">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-xl-6">
+        <h2 class="h2 color--white mb-3 mb-lg-0 compAboutTitle">
+          О производстве
+        </h2>
+      </div>
+      <div class="col-lg-7 col-xl-6">
+        <div class="content content--lg content--lg-sm-16 color--white">
+          <p>
+            Производственные мощности расположены единым комплексом на территории Иркутской области и занимают площадь
+            более 17,7 тыс. кв. м. Здесь изготавливаются профессиональные акустические системы, кресла зрительного зала,
+            одежда и механика сцены, фортепиано "Соната".
+          </p>
+        </div>
+        <div
+          class="d-flex align-items-start align-items-md-center fw-semibold gap-2 gap-sm-3 gap-md-4 flex-column flex-md-row width-sm-100 mt-4 pt-0 pt-lg-3">
+          <a href="#" class="button button--white button--arrow gap-3 width-sm-100">
+            О производстве
+            <div class="arrowBtnW">
+              <img src="img/icons/arrow-btn-purple.svg" alt="arrow">
+            </div>
+          </a>
+          <a href="#" class="link color--white width-sm-100">История компании</a>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-6">
+      <div class="col-md-6">
+        <div class="aboutCard aboutCardPiano d-flex flex-column justify-content-end" style="background-image: url('img/admin/about/image-2.jpg');">
+          <div class="aboutCardCount aboutCardCount--128 color--white fw-bold">
+            65
+          </div>
+          <div class="aboutCardText aboutCardPianoText aboutCardText--lg color--white fw-extrabold" style="max-width: 215px;">
+            видов оборудования
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+        <div class="aboutCard aboutCardSquare aboutCardSquare--lg d-flex flex-column justify-content-between">
+          <img class="aboutCardSquareImg" src="img/admin/about/square-image.svg" alt="image">
+          <div class="d-block">
+            <div class="d-flex gap-2">
+              <div class="aboutCardCount color--white fw-bold aboutCardCount--128">
+                17700
+              </div>
+              <div class="aboutCardText color--white fw-bold aboutCardText--lg aboutCardSquareMainCountText">
+                кв.м.
+              </div>
+            </div>
+            <div class="fw-medium aboutCardText aboutCardText--lg color--white">
+              площадь производства
+            </div>
+          </div>
+          <div class="d-flex gap-5">
+            <div class="d-block">
+              <div class="fw-bold color--white aboutCardCount aboutCardCount--70 aboutCardSquareCountNormal">
+                9
+              </div>
+              <div class="aboutCardText fw-medium color--white aboutCardSquareText">
+                цехов
+              </div>
+            </div>
+            <div class="d-block">
+              <div class="fw-bold color--white aboutCardCount aboutCardCount--70 aboutCardSquareCountNormal">
+                420
+              </div>
+              <div class="aboutCardText fw-medium color--white aboutCardSquareText">
+                сотрудников
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-4">
+        <a href="#" class="catCard catCard--piano">
+          <img class="catCardImg" src="img/admin/cat/image-1.png" alt="image">
+          <div class="catCardTitle">Фортепиано<br> “Соната”</div>
+        </a>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-4">
+        <a href="#" class="catCard">
+          <img class="catCardImg" src="img/admin/cat/image-2.jpg" alt="image">
+          <div class="catCardTitle">Акустические системы “EuroSound”</div>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4 mt-3 mt-md-4">
+        <a href="#" class="catCard">
+          <img class="catCardImg" src="img/admin/cat/image-3.jpg" alt="image">
+          <div class="catCardTitle catCardTitle--end">Кресла </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4 mt-3 mt-md-4">
+        <a href="#" class="catCard">
+          <img class="catCardImg" src="img/admin/cat/image-4.jpg" alt="image">
+          <div class="catCardTitle catCardTitle--end">Механика и одежда сцены </div>
+        </a>
+      </div>
+      <div class="col-md-6 col-xl-4 mt-3 mt-md-4">
+        <a href="#" class="catCard">
+          <img class="catCardImg" src="img/admin/cat/image-5.jpg" alt="image">
+          <div class="catCardTitle catCardTitle--end">кейсы </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>		
+				<section class="sect reviewsSliderSect">
+  <div class="container">
+    <h2 class="h2 sectHead">
+      Отзывы
+    </h2>
+
+    <div class="swiper reviewsSlider">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide reviewsSlide">
+          <div class="reviewsCard cardText">
+            <div class="row">
+              <div class="col-lg-4 order-2 order-lg-1 mt-3 mt-lg-0">
+                <div class="d-flex align-items-center align-items-lg-start gap-3 d-lg-block">
+                  <img src="img/admin/reviews/image-1.jpg" alt="image" class="reviewsCardImg mb-0 mb-lg-3">
+                  <div class="d-flex flex-column">
+                    <div class="reviewsCardTitle">
+                      Филатов Владимир Владимирович
+                    </div>
+                    <div class="text-uppercase reviewsCardWork">
+                      Эксперт Росохранкультуры
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 order-1 order-lg-2">
+                <div class="reviewsCardContent bg--white">
+                  <div class="content--hidden content content--sm-14">
+                    <p class="mb-0">
+                      Установлена хорошая так называемая репетиционная механика. Лично я изъянов нигде не нашел.
+                      Взаимодействие узлов и деталей, звуковоспроизведение – на хорошем уровне. Элементы выполнены из
+                      норвежской ели самого высокого качества, как правило такая древесина заготавливается в горных
+                      экологически чистых районах. Также меня приятно удивил способ закрепления модератора. Обычно
+                      модератор достаточно хлопотно снимать, в данном случае он снимается просто и без лишних усилий. На
+                      молоточках стоит маркировка немецкого производителя высокого качества, да и на ощупь сразу
+                      понятно,
+                      что это настоящая качественная овечья шерсть. Звучание инструмента мягкое, чистый звук удара по
+                      струне и, соответственно, резонанс. Отсутствуют резкие шлепающие или лязгающие призвуки. Достойная
+                      протяженность звучания одной отдельно взятой ноты. Динамика звука также приятно удивляет:
+                      позволяет
+                      тонко извлекать тихие ноты и прекрасно выдает громкий звук.
+                    </p>
+                  </div>
+                  <button class="js-show-more my-0 mt-3 mt-lg-unset my-lg-3">Читать полностью</button>
+                  <div class="reviewsCardDate d-none d-lg-block">
+                    30.03.2023
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+
+        <div class="swiper-slide reviewsSlide">
+          <div class="reviewsCard cardText">
+            <div class="row">
+              <div class="col-lg-4 order-2 order-lg-1 mt-3 mt-lg-0">
+                <div class="d-flex align-items-center align-items-lg-start gap-3 d-lg-block">
+                  <img src="img/admin/reviews/image-2.jpg" alt="image" class="reviewsCardImg mb-0 mb-lg-3">
+                  <div class="d-flex flex-column">
+                    <div class="reviewsCardTitle">
+                      Министерство культуры Ростовской области
+                    </div>                 
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-8 order-1 order-lg-2">
+                <div class="reviewsCardContent bg--white">
+                  <div class="content--hidden content content--sm-14">
+                    <p class="mb-0">
+                      Обычно модератор достаточно хлопотно снимать, в данном случае он снимается просто и без лишних
+                      усилий. На
+                      молоточках стоит маркировка немецкого производителя высокого качества, да и на ощупь сразу
+                      понятно,
+                      что это настоящая качественная овечья шерсть. Звучание инструмента мягкое, чистый звук удара по
+                      струне и, соответственно, резонанс. Отсутствуют резкие шлепающие или лязгающие призвуки. Достойная
+                      протяженность звучания одной отдельно взятой ноты. Динамика звука также приятно удивляет:
+                      позволяет
+                      тонко извлекать тихие ноты и прекрасно выдает громкий звук.
+                    </p>
+                  </div>
+                  <button class="js-show-more my-0 mt-3 mt-lg-unset my-lg-3">Читать полностью</button>
+                  <div class="reviewsCardDate d-none d-lg-block">
+                    25.03.2022
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- /reviewsCard -->
+        </div><!-- /reviewsSlide -->
+
+      </div>
+    </div><!-- /reviewsSlider -->
+
+    <div class="d-flex justify-content-between mt-6 width-sm-100">
+      <div
+        class="d-flex align-items-start align-items-md-center fw-semibold gap-2 gap-sm-3 gap-md-4 flex-column flex-md-row width-sm-100">
+        <a href="#" class="button button--purple button--arrow gap-3 width-sm-100">
+          Все отзывы
+          <div class="arrowBtnW">
+            <img src="img/icons/arrow-btn-white.svg" alt="arrow">
+          </div>
+        </a>
+      </div>
+      <div class="navArrowW d-none d-sm-flex">
+        <button class="navArrow navArrowPrev">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+          </svg>
+        </button>
+        <button class="navArrow navArrowNext">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+          </svg>
+        </button>
+      </div><!-- /navArrowW -->
+    </div>
+  </div>
+</section>
+				<section class="sect newsSect bg--light-light-gray">
+  <div class="container">
+    <div class="newsWBg">
+      <div class="newsInner">
+        <h2 class="h2 sectHead">
+          Новости
+        </h2>
+        <div class="swiper newsSlider mt-6 mb-6">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide newsSlide">
+              <div class="newsCard">
+                <a href="#" class="newsCardImg">
+                  <img src="img/admin/news/image-1.jpg" alt="image">
+                </a>
+                <div class="newsCardContent">
+                  <a href="#" class="newsCardTitle fw-semibold">
+                    Минэкономразвития РФ посетил фабрику "Азия Мьюзик Компани"
+                  </a>
+                </div>
+              </div><!-- /newsCard -->
+            </div><!-- /newsSlide -->
+
+            <div class="swiper-slide newsSlide">
+              <div class="newsCard">
+                <a href="#" class="newsCardImg">
+                  <img src="img/admin/news/image-2.jpg" alt="image">
+                </a>
+                <div class="newsCardContent">
+                  <a href="#" class="newsCardTitle fw-semibold">
+                    Владимир Путин призвал продвигать региональные бренды
+                  </a>
+                </div>
+              </div><!-- /newsCard -->
+            </div><!-- /newsSlide -->
+
+            <div class="swiper-slide newsSlide">
+              <div class="newsCard">
+                <a href="#" class="newsCardImg">
+                  <img src="img/admin/news/image-3.jpg" alt="image">
+                </a>
+                <div class="newsCardContent">
+                  <a href="#" class="newsCardTitle fw-semibold">
+                    Форум «Сильные идеи для нового времени»
+                  </a>
+                </div>
+              </div><!-- /newsCard -->
+            </div><!-- /newsSlide -->
+
+            <div class="swiper-slide newsSlide">
+              <div class="newsCard">
+                <a href="#" class="newsCardImg">
+                  <img src="img/admin/news/image-1.jpg" alt="image">
+                </a>
+                <div class="newsCardContent">
+                  <a href="#" class="newsCardTitle fw-semibold">
+                    Фабрика с системным подходом к обучению сотрудников
+                  </a>
+                </div>
+              </div><!-- /newsCard -->
+            </div><!-- /newsSlide -->
+
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-4 width-sm-100">
+          <div
+            class="d-flex align-items-start align-items-md-center fw-semibold gap-2 gap-sm-3 gap-md-4 flex-column flex-md-row width-sm-100">
+            <a href="#" class="button button--purple button--arrow gap-3 width-sm-100">
+              Все новости и публикации
+              <div class="arrowBtnW">
+                <img src="img/icons/arrow-btn-white.svg" alt="arrow">
+              </div>
+            </a>
+            <a href="#" class="link width-sm-100">Публикации в СМИ</a>
+          </div>
+          <div class="navArrowW d-none d-sm-flex">
+            <button class="navArrow navArrowPrev">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-prev"></use>
+              </svg>
+            </button>
+            <button class="navArrow navArrowNext">
+              <svg>
+                <use xlink:href="img/icons/icons.svg#arrow-next"></use>
+              </svg>
+            </button>
+          </div><!-- /navArrowW -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+				<section class="sect callback">
+  <div class="container">
+    <div class="row mb-2 mb-md-3 mb-lg-4 pb-0 pb-lg-3">
+      <div class="col-lg-6">
+        <h2 class="h2 color--primary mb-3 mb-lg-0" style="max-width: 420px;">
+          Оформите заявку
+        </h2>
+      </div>
+      <div class="col-lg-6">
+        <div class="content content--sm-14">
+          <p>
+            Мы свяжемся с вами в ближайшее время и ответим на все интересующие вопросы.
+          </p>
+        </div>
+      </div>
+    </div>
+    <form class="form" action="#">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="callbackName" placeholder="Ваше имя">
+            <label for="floatingInput">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="callbackPhone" placeholder="Email или Телефон для связи">
+            <label for="floatingInput">Email или Телефон для связи</label>
+          </div>
+        </div>
+        <div class="col-12 mt-5 mt-md-4 mt-lg-3">
+          <div class="d-flex flex-column-reverse flex-sm-row align-items-center justify-content-between">
+            <div class="agreement">
+              <input type="checkbox" id="callbackAgreement" hidden checked>
+              <label class="checkboxW" for="callbackAgreement">
+                <div class="rect">
+
+                </div>
+                <div class="agreementText">
+                  Подтверждаю, что согласен/согласна с <a href="#" target="_blank">политикой конфиденциальности</a>
+                </div>
+              </label>
+            </div>
+            <button class="button button--purple formBtn width-sm-100">
+              Отправить
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</section>
+			</main>
+			<!-- Footer -->
+<footer class="footer color--white" id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <nav class="footerNav">
+          <ul>
+            <li>
+              <a href="#">
+                Компания
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Клиентам
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Пресс-центр
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-4">
+        <a href="tel:+791234567890" class="footerPhone mb-3">8 123 456 7890</a>
+        <a href="mailto:info@asiamusic.ru" class="footerMail mb-3">info@asiamusic.ru</a>
+        <a href="#" class="footerAddress" target="_blank">
+          г. Иркутск, п. Дзержинск, ул. Ушаковская, 3А
+        </a>
+      </div>
+      <div class="col-md-4">
+        <div class="socials mb-3">
+          <ul class="d-flex gap-3 justify-content-center justify-content-md-start">
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/vk.svg" alt="icon">
+              </a>
+            </li>
+            <li>
+              <a href="#" target="_blank">
+                <img src="img/admin/socials/youtube.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div><!-- /socials-->
+
+        <button class="footerLink mb-3" data-src="#modalOrder" data-fancybox>Задать вопрос</button>
+        <a class="footerLink footerPolitic">Политика конфиденциальности</a>
+
+      </div>
+    </div>
+    <div class="row mt-6 text--sm">
+      <div class="col">
+        <div class="d-flex justify-content-between align-items-center flex-column flex-sm-row gap-3">
+          <div class="copyright">
+            2024 © «Азия Мьюзик Компани»
+          </div>
+          <a class="footerDevelop d-flex gap-2" href="#" target="_blank">
+            <img src="img/icons/develop.svg" alt="icon">
+            <p>
+              Разработка сайта – Вангер.рф
+            </p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+			<!-- modal -->
+<!-- order -->
+<div class="modal" id="modalOrder">
+
+  <div class="modalHead">
+
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <h2 class="h2 color--white">Оформите заявку</h2>
+    <p class="modalDescr color--white">
+      Оставьте заявку на бесплатную консультацию и наши специалисты ответят на все Ваши вопросы
+    </p>
+    <form class="modalForm" action="#">
+
+      <div class="row">
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderName" placeholder="Ваше имя">
+            <label for="modalOrderName">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control bg--transparent" id="modalOrderPhone"
+              placeholder="Email или Телефон для связи">
+            <label for="modalOrderPhone">Email или Телефон для связи</label>
+          </div>
+        </div>
+      </div>
+
+      <button class="button button--white formBtn width-sm-100 text-nowrap mt-4">
+        Отправить
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- vacancy -->
+<div class="modal" id="modalVacancy">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="color--gray mb-4 mb-lg-5">
+      Иркутск
+    </div>
+    <h3 class="h3 h3-sm-h4 mb-3 pb-1">
+      Сборщик в деревообрабатывающем цехе
+    </h3>
+    <div class="d-flex gap-1 gap-md-3 flex-column flex-md-row">
+      <h4 class="h4 h4-sm-h5 fw-bold">
+        от 38 000 до 44 000 ₽
+      </h4>
+      <div class="vacancyCardWork mb-3">
+        <ul class="gap-2 d-flex flex-wrap">
+          <li class="text--extra-sm">
+            Опыт работы:  1–3 года
+          </li>
+          <li>
+            частичная занятость
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content mt-3 text-sm-14">
+      <p>
+        Работа в поселке Дзержинск (15 минут от Аэропорта)
+      </p>
+      <p>
+        Обязанности
+      </p>
+      <p>
+        ·         Работа по сборке кресел зрительного зала.
+      </p>
+      <p>
+        Требования:
+      </p>
+      <p>
+        ·         Образование не ниже средне-специального;
+      </p>
+      <p>
+        ·         Опыт работы с мебелью желателен.
+      </p>
+      <p>
+        Условия:
+      </p>
+      <p>
+        ·         Официальное трудоустройство;
+      </p>
+      <p>
+        ·         Полный социальный пакет, стабильная заработная плата.
+      </p>
+
+    </div>
+
+    <button class="button button--purple ml-auto width-sm-100 mt-4 mt-lg-5" data-src="#modalVacancyOrder" data-fancybox>
+      Откликнуться
+    </button>
+
+  </div>
+</div>
+
+<!-- modalVacancyOrder -->
+<div class="modal" id="modalVacancyOrder">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+
+    <div class="color--gray mb-4 mb-lg-5">
+      Иркутск
+    </div>
+    <h3 class="h3 h3-sm-h4 mb-3 pb-1">
+      Сборщик в деревообрабатывающем цехе
+    </h3>
+    <div class="d-flex gap-1 gap-md-3 flex-column flex-md-row">
+      <h4 class="h4 h4-sm-h5 fw-bold">
+        от 38 000 до 44 000 ₽
+      </h4>
+      <div class="vacancyCardWork mb-3">
+        <ul class="gap-2 d-flex flex-wrap">
+          <li class="text--extra-sm">
+            Опыт работы:  1–3 года
+          </li>
+          <li>
+            частичная занятость
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <form action="#" class="form modalForm mt-3">
+
+      <div class="row">
+        <div class="col-lg-6 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="modalVacName" placeholder="Ваше имя">
+            <label for="modalVacName">Ваше имя</label>
+          </div>
+        </div>
+        <div class="col-lg-6 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <input type="text" class="form-control" id="modalVacPhone" placeholder="Email или Телефон для связи">
+            <label for="modalVacPhone">Email или Телефон для связи</label>
+          </div>
+        </div>
+        <div class="col-12 mb-2 mb-lg-4">
+          <div class="form-floating">
+            <textarea class="form-control" id="modalVacTextarea" placeholder="Текст резюме"
+              style="height: 130px"></textarea>
+            <label for="modalVacTextarea">Текст резюме</label>
+          </div>
+        </div>
+
+        <input type="file" id="vacancyFile" onchange="showFile(this)" style="display: none;">
+        <label class="d-flex gap-2 vacancyFileLabel" for="vacancyFile">
+          <img src="img/icons/file.svg" alt="icon">
+          <span class="color--gray">Прикрепить резюме</span>
+        </label>
+        <div class="vacFileOutput">
+
+        </div>
+
+      </div>
+
+      <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3 mt-5">
+        <div class="agreement mt-0">
+          <input type="checkbox" id="modalVacAgreement" hidden checked>
+          <label class="checkboxW align-items-center" for="modalVacAgreement">
+            <div class="rect">
+
+            </div>
+            <div class="agreementText">
+              Подтверждаю, что согласен/согласна с <a href="#" target="_blank">политикой конфиденциальности</a>
+            </div>
+          </label>
+        </div>
+        <button class="button button--purple formBtn width-sm-100 text-nowrap">
+          Отправить отклик
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  function showFile(input) {
+    let file = input.files[0];
+    let vacFileOutput = document.querySelector('.vacFileOutput');
+    vacFileOutput.textContent = `Загружено: ${file.name}`;
+  }
+</script>
+
+<!-- modalFilter -->
+<div class="modal" id="modalFilter">
+
+  <div class="modalHead">
+    <button data-fancybox-close class="f-button is-close-btn" title="Close"><svg xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24" tabindex="-1">
+        <path d="M20 20L4 4m16 0L4 20"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="modalContent">
+    <nav class="menuNav">
+      <ul>
+        <li>
+          <h5>
+            Фильтры
+          </h5>
+        </li>
+        <li>
+          <button class="accordNavHead active">
+            Цена
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody" style="display: block;">
+            <div class="d-flex gap-2">
+              <div class="mb-3 w-50">
+                <input type="text" class="form-control px-2" id="priceFrom" placeholder="От"
+                  style="height: 40px; box-sizing: border-box;">
+              </div>
+              <div class="mb-3 w-50">
+                <input type="text" class="form-control px-2" id="priceFrom" placeholder="До"
+                  style="height: 40px; box-sizing: border-box;">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <button class="accordNavHead active">
+            Фильтр
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody" style="display: block;">
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_11" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_11">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_12" hidden checked>
+              <label class="d-flex gap-2 align-items-start" for="filter_12">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр 2
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem mb-3">
+              <input type="checkbox" id="filter_13" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_13">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр 3
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+            <div class="accordNavCheckboxItem">
+              <input type="checkbox" id="filter_15" hidden>
+              <label class="d-flex gap-2 align-items-start" for="filter_15">
+                <div class="rect"></div>
+                <div class="accordNavCheckboxText">
+                  Фильтр длинное название в неск строк
+                </div>
+              </label>
+            </div><!-- /accordNavCheckboxItem -->
+          </div>
+        </li>
+        <li>
+          <button class="accordNavHead">
+            Фильтр 1
+            <img src="img/icons/nav-arrow-up.svg" alt="arrow">
+          </button>
+          <div class="accordNavBody">
+            <div class="d-flex">
+              <div class="accordNavCheckboxItem mb-3">
+                <input type="checkbox" id="filter_24" hidden>
+                <label class="d-flex gap-2 align-items-start" for="filter_24">
+                  <div class="rect"></div>
+                  <div class="accordNavCheckboxText">
+                    Фильтр 4
+                  </div>
+                </label>
+              </div><!-- /accordNavCheckboxItem -->
+            </div>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+
+  </div>
+</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

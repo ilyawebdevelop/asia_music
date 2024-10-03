@@ -1,0 +1,78 @@
+.news {
+  &Sect {
+    overflow: hidden;
+  }
+  &Slider {
+    overflow: visible;
+    @media(max-width: 575px){
+      padding-right: 10px;
+    }
+    &.mt-6 {
+      @media(max-width: 991px){
+        margin-top: 0;
+      }
+    }
+  }
+  &Card {
+    &Title {
+      margin-top: 20px;
+      transition: color .2s linear;
+      line-height: 150%;
+      &:hover {
+        color: var(--primary);
+      }
+    }
+    &Img {
+      img {
+        border-radius: 8px;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+        transition: box-shadow .2s linear;
+        &:hover {
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+  }
+}
+.newsGrid{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 40px;
+  margin-top: 40px;
+
+  @media(max-width: 1199px) {
+    column-gap: 15px;
+    row-gap: 15px;
+  }
+
+  @media(max-width: 575px) {
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 20px;
+  }
+  .newsCard {
+    grid-column: 4 span;
+
+    @media(max-width: 767px) {
+      grid-column: 6 span;
+    }
+    @media(max-width: 575px){
+      grid-column: 12 span;
+    }
+  }
+}
+@media(max-width: 575px){
+  .newsSort{
+    width: 100%;
+    background-color: var(--light-light-gray);
+    height: 52px;
+    padding-left: 8px;
+    border-radius: 8px;
+  }
+  .newsSortW{
+    width: 100%;
+  }
+}

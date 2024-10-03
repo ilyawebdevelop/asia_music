@@ -1,0 +1,115 @@
+.concert {
+  &Card {
+    padding: 40px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 330px;
+    background-color: var(--light-gray);
+    &:hover {
+      opacity: .9;
+    }
+    @media(max-width: 1199px){
+      padding: 20px;
+      min-height: 278px;
+    }
+    @media(max-width: 767px){
+      min-height: 200px;
+      padding: 10px;
+    }
+
+    &--sm {
+      min-height: fit-content;
+      padding-bottom: 50px;
+      @media(max-width: 767px){
+        min-height: 200px;
+      }
+    }
+
+    &--long {
+      height: 503px;
+      @media(max-width: 1199px){
+        height: 420px;
+      }
+      @media(max-width: 767px){
+        min-height: 200px;
+        height: unset;
+      }
+    }
+
+    &--extra-long {
+      height: 100%;
+    }
+
+    &Title {
+      color: #fff;
+      font-size: 24px;
+      line-height: 133%;
+      font-weight: 700;
+      text-transform: uppercase;
+      max-width: 330px;
+      @media(max-width: 1199px){
+        font-size: 20px;
+      }
+      @media(max-width: 767px){
+        font-size: 14px;
+        line-height: 133%;
+      }
+    }
+  }
+}
+
+.concertGridW {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+}
+
+.concertGridL {
+  grid-column: 8 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+
+.concertGridR {
+  grid-column: 4 span;
+  @media(max-width: 767px){
+    grid-column: 12 span;
+  }
+}
+.concertGridLT {
+  margin-bottom: 20px;
+  @media(max-width: 767px){
+    margin-bottom: 10px;
+  }
+}
+.concertGridLB {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 18px;
+  @media(max-width: 767px){
+    column-gap: 10px;
+  }
+}
+
+.concertGridLBL {
+  grid-column: 6 span;
+  @media(max-width: 767px){
+    row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.concertGridLBR {
+  grid-column: 6 span;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  @media(max-width: 767px){
+    row-gap: 10px;
+  }
+}

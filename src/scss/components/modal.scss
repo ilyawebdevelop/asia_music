@@ -1,0 +1,196 @@
+// modal
+.modal {
+  display: none;
+  width: 700px;
+  padding: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  height: fit-content;
+
+
+  @media(max-width: 420px) {
+    padding: 30px;
+  }
+
+  .h2 {
+    font-size: 36px;
+    line-height: 133%;
+    @media(max-width: 767px){
+      font-size: 28px;
+    }
+  }
+
+  &Descr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .f-button {
+    right: 6px;
+    top: 6px;
+  }
+
+  .agreement {
+    margin-top: 15px;
+    line-height: normal;
+
+    @media(max-width: 991px) {
+      font-size: 9px;
+      line-height: 10px;
+    }
+  }
+
+  textarea {
+    height: 130px;
+  }
+
+  .form-control {
+    border: 1px solid var(--lgray);
+    padding-left: 20px !important;
+
+    &+label {
+      padding-left: 20px !important;
+    }
+  }
+}
+
+.fancybox__backdrop {
+  background: rgba($color: #1E1E1E, $alpha: .62);
+}
+
+.fancybox__content {
+  color: #1E1E1E;
+  border-radius: 0;
+  position: relative;
+  height: fit-content;
+
+}
+
+.f-button.is-close-btn {
+  background-color: transparent;
+
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+#modalVacancy {
+  width: 800px;
+
+  @media(max-width: 767px) {
+    padding: 20px;
+  }
+
+  .vacancyCardWork ul li {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--gray);
+
+    @media(max-width: 767px) {
+      font-size: 9px;
+      line-height: 12px;
+    }
+  }
+
+  .button {
+    margin-left: auto;
+
+    @media(max-width: 575px) {
+      margin-left: unset;
+    }
+  }
+
+  .content {
+    p {
+      @media(max-width: 991px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#modalVacancyOrder {
+  width: 800px;
+
+  @media(max-width: 767px) {
+    padding: 20px;
+  }
+
+  .vacancyCardWork ul li {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--gray);
+
+    @media(max-width: 767px) {
+      font-size: 9px;
+      line-height: 12px;
+    }
+  }
+
+}
+
+#modalOrder {
+  padding: 80px;
+  background: var(--primary) url('@img/modal/modal-bg-lg.svg') no-repeat center center / cover;
+  @media(max-width: 767px){
+    padding: 0;
+    border-radius: 8px;
+  }
+
+  .modalContent {
+    background: url('@img/modal/bg-modal.svg') no-repeat center center / cover;
+    padding: 40px;
+    border-radius: 8px;
+    @media(max-width: 767px){
+      padding: 40px 25px;
+    }
+  }
+
+  .modalDescr {
+    font-size: 16px;
+    line-height: 175%;
+    opacity: .8;
+  }
+  .form-floating {
+    label {
+      color: #fff;
+      padding-left: 0!important;
+    }
+  }
+  .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-left: 0!important;
+  }
+  .f-button svg {
+    stroke: #fff;
+  }
+}
+
+.vacancyFileLabel {
+  padding-left: 30px;
+}
+
+.vacFileOutput {
+  margin-top: 5px;
+  padding-left: 30px;
+}
+
+#modalFilter {
+  @media(max-width: 575px) {
+    padding: 20px;
+  }
+}

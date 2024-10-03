@@ -1,0 +1,106 @@
+.tech {
+  &Card {
+    padding: 30px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    height: 100%;
+    @media(max-width: 991px){
+      padding: 20px;
+    }
+    &::before {
+      content: '';
+      position: absolute;     
+      right: 30px;
+      top: 30px;
+      bottom: 30px;     
+      background-size: contain;
+      background-repeat: no-repeat;    
+      max-width: 360px;
+      @media(max-width: 767px){
+        max-width: 200px;
+        top: unset;
+      }
+      @media(max-width: 575px){
+        max-width: 250px;
+      }
+    }
+    &--pink {
+      background-color: #F6DBF0;
+      background-position: right 20px center;
+      &::before {       
+        right: 30px;
+        top: 30px;
+        bottom: 30px;      
+        background-position: right center;
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);   
+        @media(max-width: 767px){
+          top: unset;
+          margin: auto;
+          left: 0;
+          right: 0;
+          background-position: center bottom;
+        }
+      }
+    }
+
+    &--linear {
+     
+      background: linear-gradient(180deg, #803671 0%, #691d5a 51%, #34072b 100%);
+      &::before {
+        width: calc(100% - 60px);
+        height: calc(100% - 60px);   
+        background-position: center;
+        @media(max-width: 767px){
+          background-position: center bottom;
+          margin: auto;
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
+    &Title {
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 800;
+      position: relative;
+      z-index: 1;
+      @media(max-width: 1199px){
+        font-size: 20px;
+        line-height: 28px;
+      }
+      @media(max-width: 991px){
+        font-size: 18px;
+        line-height: 24px;
+      }
+    }
+    &Descr {
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+.techCardMath {
+  &::before {
+    background-image: url('@img/tech/icon-1.svg');
+  }
+}
+.techCardStandart {
+  &::before {
+    background-image: url('@img/tech/icon-2.svg');
+  }
+}
+.techCardQuality {
+  &::before {
+    background-image: url('@img/tech/icon-3.svg');
+  }
+}
+.techCardService{
+  &::before {
+    background-image: url('@img/tech/icon-4.svg');
+  }
+}

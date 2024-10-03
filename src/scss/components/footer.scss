@@ -1,0 +1,123 @@
+// Footer
+.footer {
+  background-color: var(--deepdark);
+  padding-top: 60px;
+  padding-bottom: 30px;
+  @media(max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &Nav {
+    @media(max-width: 767px){
+      margin-bottom: 40px;
+    }
+    ul {
+      li {
+        &:not(:last-child){
+          margin-bottom: 20px;
+        }       
+
+        a {
+          font-size: 16px;
+          line-height: 20px;
+          font-weight: 600;
+          color: #fff;
+          text-decoration: underline;
+          text-underline-offset: 7px;
+          text-decoration-thickness: 1px;
+          text-decoration-color: transparent;
+          transition: text-decoration-color 0.2s linear;
+          @media(max-width: 767px) {
+            text-align: center;
+          }
+
+          &:hover {
+            text-decoration-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  &Phone,
+  &Mail,
+  &Address,
+  &Develop {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.2s linear;
+    @media(max-width: 767px){
+      text-align: center;
+    }
+
+    &:hover {
+      text-decoration-color: #fff;
+      text-decoration: underline;
+    }
+  }
+
+  .socials {
+    @media(max-width: 767px){
+      margin-top: 40px;
+    }
+    ul {
+      li {
+        a {
+          transition: opacity .2s linear;
+       
+          &:hover {
+            opacity: .8;
+          }
+
+          img {
+            width: 48px;
+          }
+        }
+      }
+    }
+  }
+
+  &Link {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: #fff;
+    transition: text-decoration-color 0.2s linear;
+    @media(max-width: 767px){
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  &Politic {
+    @media(max-width: 991px) {
+      font-size: 14px;
+    }
+    @media(max-width: 767px){
+      margin-top: 60px;
+      text-decoration-color: rgba($color: #fff, $alpha: .5);
+    }
+  }
+  &Address {
+    @media(max-width: 767px){
+      max-width: 232px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .mt-6 {
+    @media(max-width: 991px){
+      margin-top: 60px;
+    }
+  }
+}

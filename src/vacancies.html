@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Работа в компании"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header-standart.html',{})
+			<main class="main">
+				@@include('html/components/breadcrumbs.html',{})
+				@@include('html/vacancies/content.html',{})		
+
+				@@include('html/callback-gray.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

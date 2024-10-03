@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Компания"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header-standart.html',{})
+			<main class="main">
+				@@include('html/components/breadcrumbs.html',{})
+				@@include('html/company/content.html',{})
+				@@include('html/company/about.html',{})
+				@@include('html/brands.html',{})
+				@@include('html/cert.html',{})
+				@@include('html/reviews-gray.html',{})
+				@@include('html/projects.html',{})
+				@@include('html/lenta.html',{})
+				@@include('html/vacancy.html',{})
+
+				@@include('html/callback-gray.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

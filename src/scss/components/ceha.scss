@@ -1,0 +1,119 @@
+.ceha {
+  &Card {
+    border: 1px solid var(--pink);
+    border-radius: 8px;
+    padding: 20px 40px 40px 40px;
+    height: 100%;
+    @media(max-width: 767px){
+      background: url('@img/ceha/bg-card.svg') no-repeat center center / cover;
+    }
+    @media(max-width: 575px){
+      padding: 20px;
+    }
+
+    &Count {
+      font-weight: 700;
+      font-size: 96px;
+      line-height: normal;
+      @media(max-width: 1199px){
+        font-size: 64px;
+        line-height: 80px;
+      }
+    }
+
+    &Text {
+      font-size: 21px;
+      line-height: 32px;
+      font-weight: 800;
+      margin-top: -18px;
+      @media(max-width: 1199px){
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-top: -2px;
+      }
+    }
+  }
+
+  &List {
+    background: url('@img/ceha/bg.svg') no-repeat center center / cover;
+    @media(max-width: 767px){
+      background: none;
+    }
+  }
+
+  &Gal {
+
+    &Slide {
+      img {
+        height: 560px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 8px 8px 0 0;
+        transition: opacity .2s linear;
+        @media(max-width: 1400px){
+          height: 500px;
+        }
+        @media(max-width: 1199px){
+          height: 400px;
+        }
+        @media(max-width: 991px){
+          border-radius: 8px;
+        }
+        @media(max-width: 767px){
+          height: 340px;
+        }
+        @media(max-width: 575px){
+          height: 55vw;
+        }
+
+        &:hover {
+          opacity: .85;
+        }
+      }
+
+      &Descr {
+        margin-top: 32px;
+        display: block;
+        max-width: calc(100% - 80px);
+        @media(max-width: 991px){
+          font-size: 14px;
+          line-height: 20px;
+          font-weight: 400;
+          margin-top: 10px;
+        }
+        @media(max-width: 575px){
+          max-width: 100%;
+        }
+      }
+    }
+    &Slider {
+      @media(max-width: 575px){
+        overflow: visible;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.cehaGalSliderSect {
+  overflow: hidden;
+  .navArrowW {
+    position: absolute;
+    top: 584px;
+    right: 0;
+    z-index: 1;
+    @media(max-width: 1400px){
+      top: 524px;
+    }
+    @media(max-width: 1199px){
+      top: 424px;
+    }
+    @media(max-width: 991px){
+      top: 400px;
+    }
+    @media(max-width: 767px){
+      top: 340px;
+    }
+  }
+}

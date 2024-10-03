@@ -1,0 +1,59 @@
+.lenta {
+  &Slider {
+    margin-top: 60px;
+    overflow: visible;
+    @media(max-width: 991px){
+      margin-top: 20px;
+    }
+  }
+  &Slide {
+    height: auto;
+    .lentaCard {
+      height: 100%;
+    }
+  }
+  &Card {
+    padding: 24px 32px;
+    border-radius: 8px;
+    min-height: 240px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    &:hover {
+      opacity: .85;
+    }
+    
+    &--primary {
+      background: var(--primary) url('@img/lenta/bg-card.svg') no-repeat top center / cover;
+    }
+    &--white {
+      background: #fff url('@img/lenta/lenta-bg-card-white.svg') no-repeat top center / cover;
+    }
+    &Date {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+    }
+    &Title {
+      @media(max-width: 991px){
+        font-size: 22px;
+        line-height: 30px;
+      }
+    }
+  }
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+    @media(max-width: 991px){
+      gap: 10px;
+    }
+    .lentaCard {
+      grid-column: 4 span;
+      @media(max-width: 1199px){
+        grid-column: 6 span;
+      }
+      @media(max-width: 575px){
+        grid-column: 12 span;
+      }
+    }
+  }
+}

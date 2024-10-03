@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Фортепиано “Соната”"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				@@include('html/cat/intro.html',{})
+				@@include('html/cat/catalog.html',{})
+				@@include('html/cat/content.html',{})
+				@@include('html/projects.html',{})
+				@@include('html/company/about.html',{})		
+				@@include('html/reviews.html',{})
+				@@include('html/news.html',{})
+				@@include('html/callback-transparent.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

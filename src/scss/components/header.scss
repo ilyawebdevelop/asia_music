@@ -1,0 +1,205 @@
+// Header
+.header {
+  &--absolute {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 45px;
+    z-index: 11;
+    @media(max-width: 991px){     
+      top: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: fixed;
+      background-color: #fff;
+    }
+    .container {
+      @media(max-width: 991px){
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+  &--standart {
+    padding-top: 45px;
+    z-index: 11;
+    @media(max-width: 991px){
+      border-bottom: 1px solid var(--light-gray);
+      padding-bottom: 10px;
+      padding-top: 10px;
+      position: fixed;
+      width: 100%;
+      background-color: #fff;
+      top: 0;
+    }
+  }
+
+  .phone {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 24px;
+    background-size: 16px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    &:hover {
+      opacity: .8;
+    }
+
+    &--white {
+      color: #fff;
+      background-image: url('@img/icons/phone-white.svg');
+    }
+    &--primary {
+      background-image: url('@img/icons/phone.svg');
+    }
+  }
+
+  .searchBtn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    transition: background .2s linear;
+
+    &--white {
+      background: url('@img/icons/search-white.svg') no-repeat center center / 16px;
+      &:hover {
+        background: #fff url('@img/icons/search-purple.svg') no-repeat center center / 16px;
+      }
+    }
+    &--primary {
+      background: url('@img/icons/search.svg') no-repeat center center / 16px;     
+    }
+  }
+}
+.headerFixSearchW {
+  border: 1px solid var(--light-gray);
+  background-color: #fff;
+  position: fixed; 
+  top: 0;
+  right: 0;
+  width: calc(100% - 240px);
+  padding-left: 40px;
+  // height: 100px;
+  display: none;
+  @media(max-width: 991px){
+    width: 100%;
+    padding-left: 15px;  
+  }
+  &.active {
+    display: block;
+    -webkit-animation: showsOpacity 0.5s;
+    animation: showsOpacity 0.5s;
+  }
+}
+.headerFixSearchBtn{
+  border-left: 1px solid var(--light-gray);
+  min-width: 110px;
+  width: 110px;
+  height: 88px;
+  @include flex-all-center;
+  transition: border-color .2s linear;
+  @media(max-width: 1400px){
+    height: 66px;
+    width: 70px;
+    min-width: 70px;
+  }
+  @media(max-width: 991px){  
+    min-height: 66px;   
+  }
+  @media(max-width: 575px){
+    width: 50px;
+    min-width: 50px;
+  }
+  &:hover {
+    border-color: var(--lgray);
+    &+.headerFixCloseBtn {
+      border-color: var(--lgray);
+    }
+  }
+  img {
+    width: 32px;
+    @media(max-width: 991px){
+      width: 20px;
+    }
+  }
+}
+.headerFixCloseBtn{
+  border-left: 1px solid var(--light-gray);
+  min-width: 80px;
+  width: 80px;
+  height: 88px;
+  @include flex-all-center;
+  transition: border-color .2s linear;
+  @media(max-width: 1400px){
+    height: 66px;
+    width: 70px;
+    min-width: 70px;
+  }
+  @media(max-width: 991px){
+    min-height: 66px;
+  }
+  @media(max-width: 575px){
+    width: 50px;
+    min-width: 50px;
+  }
+  &:hover {
+    border-color: var(--lgray);
+  }
+  img {
+    width: 32px;
+    @media(max-width: 991px){
+    width: 20px;
+    }
+  }
+}
+.headerSearchInput {
+  width: 100%;
+  padding-right: 40px;
+  @media(max-width: 991px){
+    padding-right: 15px;
+  }
+  &::placeholder {
+    color: var(--black);
+  }
+  &:focus {
+   
+    &::placeholder {
+      color: var(--primary);
+    }
+  }
+}
+.searchDrop {
+  height: 100%;
+  &:hover {
+    &+.headerFixSearchBtn {
+      border-color: var(--lgray);
+    }
+    .button {
+      border-color: var(--lgray);    
+    }
+  }
+
+  .button {
+    height: 100%;
+    padding-right: 20px;
+    padding-left: 0;
+    font-weight: 400;
+    padding-left: 20px;
+    border-left: 1px solid var(--light-gray);
+    border-radius: 0;
+    transition: border-color .2s linear;
+    @media(max-width: 991px){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    @media(max-width: 575px){
+      font-size: 14px;
+      column-gap: 3px;
+    }
+  }
+  .dropdown-menu {
+    width: 100%;
+    margin-top: -3px !important;
+    border-radius: 0;
+  }
+}

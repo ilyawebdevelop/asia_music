@@ -1,0 +1,52 @@
+.cert {
+  &Slider {
+    overflow: visible;   
+    margin-top: 60px;
+    @media(max-width: 991px){
+      margin-top: 20px;
+    }
+    @media(max-width: 575px){
+      padding-right: 20px;
+    }
+  }
+  &Slide {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    height: auto;
+    display: grid;
+    grid-template-rows: 353px auto;
+    border: 1px solid var(--light-gray);
+
+    &:hover {
+      .certSlideTitle {
+        color: var(--primary);
+      }
+      .certSlideImg {
+        opacity: .85;
+      }
+    }
+
+    &Img {
+      height: 333px;
+      width: auto;
+      margin-bottom: 20px;
+      transition: opacity .2s linear;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &Title {
+      margin-bottom: 20px;
+      transition: color .2s linear;
+    }
+    &Size {
+      color: var(--gray);
+      font-size: 14px;
+      line-height: 20px;
+    }
+    &Content {
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}

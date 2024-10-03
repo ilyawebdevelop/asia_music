@@ -1,0 +1,86 @@
+.vacancy {
+  &Slider {
+    overflow: visible;
+
+    @media(max-width: 575px) {
+      padding-right: 20px;
+    }
+  }
+
+  &Slide {
+    height: auto;
+
+    .vacancyCard {
+      height: 100%;
+    }
+  }
+
+  &Card {
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 290px;
+    transition: box-shadow .2s linear;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.12);
+
+      .vacancyCardTitle {
+        color: var(--primary);
+      }
+    }
+
+    &Work {
+      ul {
+        li {
+          background: var(--light-gray);
+          border-radius: 8px;
+          padding: 4px 8px;
+          width: fit-content;
+          font-size: 10px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    &Title {
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 700;
+      transition: color .2s linear;
+    }
+
+    &Price {
+      font-weight: 600;
+    }
+
+    &City {
+      color: var(--gray);
+    }
+  }
+
+  &Grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+
+    @media(max-width: 991px) {
+      gap: 10px;
+    }
+
+    .vacancyCard {
+      grid-column: 4 span;
+
+      @media(max-width: 1199px) {
+        grid-column: 6 span;
+      }
+
+      @media(max-width: 767px) {
+        grid-column: 12 span;
+      }
+    }
+  }
+}

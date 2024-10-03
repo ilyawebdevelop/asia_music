@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Контакты"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header-standart.html',{})
+			<main class="main">
+				@@include('html/components/breadcrumbs.html',{})
+				@@include('html/contacts/content.html',{})
+				@@include('html/contacts/map.html',{})
+				@@include('html/contacts/content_2.html',{})
+				@@include('html/callback-gray.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+	<script>
+		//отключаем зум колёсиком мышки
+		let mapIframe = document.querySelector('.mapIframe');
+		let mapAction = document.querySelector('.map-action');
+
+		mapAction?.addEventListener('click', () => {
+			mapIframe.classList.add('onScroll');
+		});
+
+		document.addEventListener('click', e => {
+			let target = e.target;
+			let its_map = target == mapAction || mapAction.contains(target);
+			let menu_is_active = mapIframe.classList.contains('onScroll');
+			if (!its_map && menu_is_active) {
+				mapIframe?.classList.remove('onScroll');
+			}
+		});
+	</script>
+
+
+</body>
+
+</html>

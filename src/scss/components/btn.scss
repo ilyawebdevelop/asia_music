@@ -1,0 +1,125 @@
+// btn
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  transition: background-color .2s linear, color .2s linear, border-color .2s linear, opacity .2s linear;
+  column-gap: 10px;
+  height: 52px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  @media(max-width: 575px){
+    line-height: normal;
+  }
+  &.width-sm-100 {
+    @media(max-width: 575px){
+      width: 100%;     
+    }
+  }
+
+  &--sm {
+    height: 36px;
+  }
+
+  &--arrow {
+    padding-right: 16px;
+    @media(max-width: 575px){
+      justify-content: space-between;
+      padding-left: 16px;
+    }
+  }
+  &--lg {
+    height: 65px;
+    @media(max-width: 991px){
+      height: 50px;
+    }
+  }
+  &--white {
+    background-color: #fff;
+    color: var(--primary);
+    &:hover {
+      opacity: .85;
+    }
+  }
+  &--purple {
+    background-color: var(--primary);
+    color: #fff;
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+  &--transparent-white {
+    border: 1px solid #fff;
+    color: #fff;
+    &:hover {
+      background-color: var(--primary-hover);
+      border-color: var(--primary-hover);
+    }
+  }
+  &--transparent-gray {
+    border: 1px solid var(--lgray);
+    color: var(--gray);
+    &:hover {
+      background-color: var(--light-light-gray);
+      border-color: var(--primary);
+    }
+    &:focus {
+      background-color: var(--primary);
+      color: #fff;
+    }
+  }
+  .arrowBtnW{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+}
+.onlineBtn {
+  @media(max-width: 575px){
+    padding-left: 24px;
+  }
+}
+.formBtn{
+  width: 200px;
+  @media(max-width: 575px){
+    margin-bottom: 20px;
+  }
+}
+.introVideoBtn {
+  img {
+    transition: opacity .2s linear;
+  }
+  &:hover {
+    img {
+      opacity: .8;
+    }
+  }
+}
+.buttonLoadMore {
+  min-width: 320px;
+  margin-top: 60px;
+  @media(max-width: 575px){
+    margin-top: 40px;
+  }
+  @media(max-width: 420px){
+    min-width: unset;
+    width: 100%;
+  }
+}
+.productCardBtn{
+  margin-top: 40px;
+  @media(max-width: 1199px){
+    margin-top: 30px;
+  }
+  @media(max-width: 575px){
+    margin-top: 20px;
+  }
+  @media(max-width: 350px){
+    font-size: 14px;
+  }
+}

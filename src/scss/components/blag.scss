@@ -1,0 +1,19 @@
+.blag {
+  &Card {
+    img {
+      height: 460px;
+      width: 100%;
+      object-fit: cover;
+      @media(max-width: 1400px){
+        height: 400px;
+      }
+      @media(max-width: 1199px){
+        height: 320px;
+      }
+      @media(max-width: 575px){
+        height: 55vw;
+      }
+    }
+
+  }
+}

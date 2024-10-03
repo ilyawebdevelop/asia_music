@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Иркутский областной музыкальный театр имени Н. М. Загурского"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				@@include('html/teatr/intro.html',{})
+				@@include('html/teatr/content.html',{})
+				@@include('html/teatr/catalog.html',{})
+				@@include('html/teatr/content_2.html',{})
+				@@include('html/news.html',{})
+				@@include('html/callback-transparent.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

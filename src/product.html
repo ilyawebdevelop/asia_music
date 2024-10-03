@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Продукт"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu-product.html',{})
+		<div class="wrapper">
+			@@include('html/header-standart.html',{})
+			<main class="main">
+				@@include('html/components/breadcrumbs.html',{})
+				@@include('html/product/content.html',{})			
+				@@include('html/product/related.html',{})		
+				@@include('html/projects.html',{})
+				@@include('html/callback-gray.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

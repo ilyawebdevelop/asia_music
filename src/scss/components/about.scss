@@ -1,0 +1,344 @@
+.about {
+  &Card {
+    min-height: 330px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+    position: relative;
+    border-radius: 8px;
+    padding: 26px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media(max-width: 1199px) {
+      padding: 17px;
+      min-height: 225px;
+    }
+
+    @media(max-width: 575px) {
+      min-height: 200px;
+    }
+
+    &Img {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &Text {
+      font-size: 20px;
+      line-height: 160%;
+
+      @media(max-width: 1400px) {
+        font-size: 18px;
+      }
+
+      @media(max-width: 1199px) {
+        font-size: 14px;
+        line-height: 143%;
+      }
+
+      &--lg {
+        font-size: 24px;
+        line-height: 133%;
+
+        @media(max-width: 1400px) {
+          font-size: 20px;
+        }
+
+        @media(max-width: 1199px) {
+          font-size: 16px;
+        }
+      }
+    }
+
+    &Count {
+      &--116 {
+        font-size: 116px;
+        line-height: 86%;
+
+        @media(max-width: 1199px) {
+          font-size: 64px;
+        }
+      }
+
+      &--40 {
+        font-size: 40px;
+        line-height: 48px;
+
+        @media(max-width: 1199px) {
+          font-size: 32px;
+        }
+      }
+
+      &--24 {
+        font-size: 24px;
+        line-height: 133%;
+
+        @media(max-width: 1199px) {
+          font-size: 18px;
+        }
+      }
+
+      &--48 {
+        font-size: 48px;
+        line-height: 167%;
+
+        @media(max-width: 1199px) {
+          font-size: 32px;
+        }
+      }
+
+      &--128 {
+        font-size: 128px;
+        line-height: 125%;
+
+        @media(max-width: 1199px) {
+          font-size: 64px;
+        }
+      }
+
+      &--70 {
+        font-size: 70px;
+        line-height: 114%;
+
+        @media(max-width: 1400px) {
+          font-size: 60px;
+        }
+
+        @media(max-width: 1199px) {
+          font-size: 32px;
+          line-height: 167%;
+        }
+      }
+
+      &--160 {
+        font-size: 160px;
+        line-height: 100%;
+
+        @media(max-width: 1199px) {
+          font-size: 64px;
+          line-height: 125%;
+        }
+      }
+    }
+  }
+}
+
+.aboutCardHistory--text-lg {
+  max-width: 187px;
+
+  @media(max-width: 1199px) {
+    max-width: 131px;
+  }
+}
+
+.aboutCardHistoryCountMainMore {
+  position: relative;
+  top: 22px;
+
+  @media(max-width: 1199px) {
+    top: 5px;
+  }
+}
+
+.aboutCardHistoryCountMainText {
+  height: fit-content;
+  position: relative;
+  top: 68px;
+
+  @media(max-width: 1199px) {
+    top: 32px;
+  }
+}
+
+.aboutCardHistorySecond {
+  @media(max-width: 1199px) {
+    column-gap: 20px;
+  }
+}
+
+.aboutCardHistorySecondMore {
+  position: relative;
+  top: 17px;
+  height: fit-content;
+  margin-right: 10px;
+
+  @media(max-width: 1199px) {
+    top: 3px;
+    margin-right: 5px;
+  }
+}
+
+
+.aboutCardNationalCountText {
+  position: relative;
+  bottom: 30px;
+
+  @media(max-width: 1199px) {
+    bottom: 5px;
+  }
+}
+
+.aboutCardSquare {
+  background: linear-gradient(180deg, #803671 0%, #691d5a 51%, #34072b 100%);
+}
+
+.aboutCardSquareText {
+  position: relative;
+}
+
+.aboutCardSquareCountNormal {
+  position: relative;
+  top: 17px;
+
+  @media(max-width: 1199px) {
+    top: 3px;
+  }
+}
+
+.aboutCardSquareMainCountText {
+  height: fit-content;
+  position: relative;
+  top: 39px;
+
+  @media(max-width: 1199px) {
+    top: 20px;
+  }
+}
+
+.aboutCardSquareImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.aboutCardSquare {
+  .aboutCardText--lg {
+    position: relative;
+    bottom: 15px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &--lg {
+    .aboutCardSquareMainCountText {
+      top: 103px;
+
+      @media(max-width: 1400px) {
+        top: 85px;
+      }
+
+      @media(max-width: 1199px) {
+        font-size: 18px;
+        top: 40px;
+      }
+    }
+    .aboutCardText--lg {
+      @media(max-width: 1199px){
+        font-size: 18px;
+      }
+    }
+
+    .aboutCardSquareText {
+      bottom: -5px;
+      @media(max-width: 1199px){
+        bottom: 5px;
+      }
+    }
+
+    .aboutCardCount--128 {
+      @media(max-width: 1400px) {
+        font-size: 110px;
+      }
+
+      @media(max-width: 1199px) {
+        font-size: 64px;
+      }
+    }
+  }
+
+
+}
+
+.aboutCardGos {
+  background-color: #f6dbf0;
+}
+
+.aboutCardGosImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.aboutCardGosMain {
+  margin-left: 30px;
+
+  @media(max-width: 1199px) {
+    margin-left: 0;
+  }
+}
+
+.aboutCardGosCountNormal {
+  position: relative;
+  top: 17px;
+
+  @media(max-width: 1199px) {
+    top: 3px;
+  }
+}
+
+.aboutCardGosText {
+  @media(max-width: 1199px) {
+    max-width: 120px;
+  }
+
+  &--margin {
+    position: relative;
+    left: 37px;
+
+    @media(max-width: 1199px) {
+      left: 26px;
+      max-width: 125px;
+    }
+  }
+}
+
+.aboutCardGosTextW {
+  margin-left: 40px;
+}
+
+.aboutCardYear {
+  background-color: #a93b8e;
+}
+
+.aboutCardYearImg {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.aboutCardPiano {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aboutCardPianoText {
+  position: relative;
+  bottom: 15px;
+  margin-left: 15px;
+
+  @media(max-width: 1199px) {
+    margin-left: 5px;
+    bottom: 5px;
+  }
+}
+.compAboutTitle{
+  @media(max-width: 1199px){
+    font-size: 32px;
+    line-height: normal;
+  }
+  @media(max-width: 991px){
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

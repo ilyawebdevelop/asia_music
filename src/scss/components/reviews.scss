@@ -1,0 +1,88 @@
+.reviews {
+  &Slider {
+    margin-top: 60px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+    @media(max-width: 991px) {
+      margin-top: 20px;
+    }
+  }
+
+  &Card {
+    &Img {
+      width: 120px;
+      height: 120px;
+      min-width: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+
+      @media(max-width: 991px) {
+        width: 64px;
+        height: 64px;
+        min-width: 64px;
+      }
+    }
+
+    &Title {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+    }
+
+    &Work {
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    &Content {
+      padding: 40px;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--light-gray);
+      border-radius: 2px 40px 40px 40px;
+
+      @media(max-width: 991px) {
+        border-radius: 40px 40px 40px 2px;
+        padding: 30px;
+
+      }
+    }
+
+    &Date {
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--gray);
+    }
+
+    .content {
+      @media(max-width: 991px) {
+        color: var(--gray);
+      }
+    }
+
+  }
+
+  &List {
+    .reviewsCard {
+      margin-top: 40px;
+
+      .js-show-more {
+        display: none;
+
+        @media(max-width: 575px) {
+          display: block;
+        }
+      }
+
+      .content--hidden {
+        -webkit-line-clamp: unset;
+        @media(max-width: 575px){
+          -webkit-line-clamp: 10;
+        }
+      }
+    }
+  }
+}

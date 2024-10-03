@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+
+	<div class="pageGrid">
+		@@include('html/menu.html',{})		
+		<div class="wrapper">
+			@@include('html/header.html',{})
+			<main class="main">
+				@@include('html/main/intro.html',{})
+				@@include('html/main/cat.html',{})
+				@@include('html/main/about.html',{})
+				@@include('html/news.html',{})
+				@@include('html/projects.html',{})
+				@@include('html/main/install.html',{})
+				@@include('html/main/osnashenie.html',{})
+				@@include('html/main/concert.html',{})
+				@@include('html/main/online-shop.html',{})
+				@@include('html/callback-transparent.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>	
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>

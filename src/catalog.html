@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html',{
+"title":"Каталог продукции"
+})
+
+<body>
+
+	<div class="pageGrid catalogPageGrid">
+		@@include('html/menu.html',{})
+		@@include('html/menu-cat.html',{})
+		<div class="wrapper">
+			@@include('html/header-standart.html',{})
+			<main class="main">
+				@@include('html/components/breadcrumbs.html',{})
+				@@include('html/catalog/content.html',{})			
+
+				@@include('html/callback-gray.html',{})
+			</main>
+			@@include('html/footer.html',{})
+			@@include('html/modal.html',{})
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+
+
+
+</body>
+
+</html>
