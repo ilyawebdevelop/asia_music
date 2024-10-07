@@ -4,6 +4,8 @@
       height: 460px;
       width: 100%;
       object-fit: cover;
+      border: 1px solid var(--light-gray);
+      border-radius: 8px;
       @media(max-width: 1400px){
         height: 400px;
       }

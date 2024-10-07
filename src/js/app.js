@@ -229,10 +229,10 @@ var mySwiperReviews = new Swiper(reviewsSlider, {
   slidesPerView: 1,
   speed: 800,
   spaceBetween: 10,
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
+  // effect: 'fade',
+  // fadeEffect: {
+  //   crossFade: true
+  // },
   navigation: {
     prevEl: document.querySelector('.reviewsSliderSect .navArrowPrev'),
     nextEl: document.querySelector('.reviewsSliderSect .navArrowNext'),
@@ -267,11 +267,8 @@ var vacancySlider = new Swiper('.vacancySlider', {
 document.querySelectorAll('.cehaGalSlider').forEach(n => {
   const mySwiperCehaGal = new Swiper(n, {
     slidesPerView: 1,
-    speed: 800,
-    spaceBetween: 10,
-    autoplay: {
-      delay: 5000,
-    },
+    speed: 800,  
+    spaceBetween: 10,   
     navigation: {
       prevEl: n.closest('.cehaGalSliderSect').querySelector('.navArrowPrev'),
       nextEl: n.closest('.cehaGalSliderSect').querySelector('.navArrowNext'),

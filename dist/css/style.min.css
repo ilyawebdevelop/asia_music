@@ -15689,6 +15689,14 @@ h5,
     padding-right: 15px;
   }
 }
+.breadcrumbs ul li a {
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s linear, color 0.2s linear;
+}
+.breadcrumbs ul li a:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+}
 .breadcrumbs .sep {
   color: var(--gray);
 }
@@ -16625,6 +16633,9 @@ h5,
     overflow: visible;
   }
 }
+.productCardSlide {
+  height: auto;
+}
 .productCardSlide .productCard {
   height: 100%;
 }
@@ -16889,7 +16900,7 @@ h5,
 }
 
 .aboutCard {
-  min-height: 330px;
+  min-height: 358px;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
   position: relative;
   border-radius: 8px;
@@ -18574,6 +18585,8 @@ h5,
   height: 460px;
   width: 100%;
   object-fit: cover;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
 }
 @media (max-width: 1400px) {
   .blagCard img {
