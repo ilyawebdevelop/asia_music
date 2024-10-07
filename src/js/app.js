@@ -169,6 +169,36 @@ var brandSlider = new Swiper('.brandSlider', {
   },
 });
 
+// aboutSlider
+var aboutSlider = new Swiper('.aboutSlider', {
+  slidesPerView: 4,
+  spaceBetween: 20,
+  speed: 600,
+  navigation: {
+    prevEl: document.querySelector('.aboutSliderSect .navArrowPrev'),
+    nextEl: document.querySelector('.aboutSliderSect .navArrowNext'),
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+    1200: {
+      slidesPerView: 4,
+    },
+  },
+});
+
 // certSlider
 var certSlider = new Swiper('.certSlider', {
   slidesPerView: 3,

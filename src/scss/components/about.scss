@@ -342,3 +342,15 @@
     line-height: 32px;
   }
 }
+.aboutSlide {
+  .catCardTitle{
+    font-size: 18px;
+    line-height: 24px;
+    left: 20px;
+    top: 20px;
+    @media(max-width: 991px){
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}

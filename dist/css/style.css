@@ -15253,6 +15253,10 @@ h5,
   }
 }
 
+.raichu-player-center-controls-module__hidden___aNdHJ {
+  opacity: 1;
+}
+
 .button {
   display: flex;
   align-items: center;
@@ -17333,6 +17337,19 @@ h5,
   .compAboutTitle {
     font-size: 24px;
     line-height: 32px;
+  }
+}
+
+.aboutSlide .catCardTitle {
+  font-size: 18px;
+  line-height: 24px;
+  left: 20px;
+  top: 20px;
+}
+@media (max-width: 991px) {
+  .aboutSlide .catCardTitle {
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 
