@@ -55,20 +55,64 @@
   }
 
   .searchBtn {
-    width: 36px;
-    height: 36px;
+    width: 70px;
+    height: 50px;
     border-radius: 50%;
-    transition: background .2s linear;
+    transition: background .2s linear, opacity .2s linear;
+    position: relative;
+    &::before {
+      content: '';
+      width: 36px;
+      height: 36px;
+      // background-color: #fff;
+      position: absolute;
+      border-radius: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background: var(--primary) url('@img/icons/search-white.svg') no-repeat center center / 16px;
+      opacity: 0;
+      transition: opacity .2s linear;
+    }
+    &:hover {    
+      &:before {
+        opacity: 1;
+      }
+    }
 
     &--white {
       background: url('@img/icons/search-white.svg') no-repeat center center / 16px;
-      &:hover {
+      position: relative;
+ 
+      &::before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        // background-color: #fff;
+        position: absolute;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
         background: #fff url('@img/icons/search-purple.svg') no-repeat center center / 16px;
+        opacity: 0;
+        transition: opacity .2s linear;
+      }
+      &:hover {
+        opacity: 1;
+        &:before {
+          opacity: 1;
+        }
       }
     }
     &--primary {
       background: url('@img/icons/search.svg') no-repeat center center / 16px;     
     }
+   
   }
 }
 .headerFixSearchW {

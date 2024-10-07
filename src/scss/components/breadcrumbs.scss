@@ -64,6 +64,14 @@
         &:last-child{
           color: var(--light-gray);       
         }
+        a {
+          border-bottom: 1px solid transparent;
+          transition: border-color .2s linear, color .2s linear;
+          &:hover {
+            color: var(--white);
+            border-color: var(--white);
+          }
+        }
       }
     }
     .sep {
