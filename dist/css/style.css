@@ -19277,7 +19277,7 @@ h5,
   top: 0;
   border-radius: 8px;
   opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(103, 18, 82, 0.07);
   transition: opacity 0.2s linear;
 }
 .lentaCard--white:hover:before {
