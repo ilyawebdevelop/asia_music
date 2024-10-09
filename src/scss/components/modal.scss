@@ -176,8 +176,17 @@
     padding-left: 0!important;
     color: #fff;
   }
+  .f-button {
+    &:hover {
+      background-color: transparent;
+      svg {
+        stroke: var(--gray);
+      }
+    }
+  }
   .f-button svg {
-    stroke: #fff;
+    stroke: #fff;   
+    transition: stroke .2s linear;
   }
 }
 

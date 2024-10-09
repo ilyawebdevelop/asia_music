@@ -1,7 +1,9 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.7.1.min.js";
-
+import "./modules/noframework.waypoints.min.js";
+import { CountUp } from './modules/count-up.js';
 import "./modules/bootstrap.bundle.min.js";
+import AOS from "../../node_modules/aos/dist/aos.js";
 import { Fancybox } from "./modules/fancybox.esm.js";
 import './components.js';
 
@@ -10,6 +12,8 @@ flsFunctions.isWebp();
 Fancybox.bind("[data-fancybox]", {
   closeButton: false,
 });
+
+AOS.init();
 
 // Import swiper
 import Swiper, { Navigation, Pagination, Autoplay, Mousewheel, EffectFade, Thumbs, Scrollbar } from 'swiper';
@@ -297,8 +301,8 @@ var vacancySlider = new Swiper('.vacancySlider', {
 document.querySelectorAll('.cehaGalSlider').forEach(n => {
   const mySwiperCehaGal = new Swiper(n, {
     slidesPerView: 1,
-    speed: 800,  
-    spaceBetween: 10,   
+    speed: 800,
+    spaceBetween: 10,
     navigation: {
       prevEl: n.closest('.cehaGalSliderSect').querySelector('.navArrowPrev'),
       nextEl: n.closest('.cehaGalSliderSect').querySelector('.navArrowNext'),
@@ -375,7 +379,7 @@ btnClose?.addEventListener('click', function (e) {
 menuSearchBtn?.addEventListener('click', function (e) {
   if (mediaQuery991.matches) {
     toggleSearch();
-    menuClose();    
+    menuClose();
   } else {
     toggleSearch();
   }
@@ -556,3 +560,47 @@ searchDropMenuEach?.forEach(el => {
     searchDropOutput.textContent = el.textContent;
   });
 });
+
+// counts
+// let demo = new CountUp('js-count-up', 17700);
+// if (!demo.error) {
+//   demo.start();
+// } else {
+//   console.error(demo.error);
+// }
+
+
+const options = {
+  separator: ', ',
+};
+let demo_1 = new CountUp('js-count-up_1', 17700, options);
+let demo_2 = new CountUp('js-count-up_2', 65, options);
+let demo_3 = new CountUp('js-count-up_3', 9, options);
+let demo_4 = new CountUp('js-count-up_4', 420, options);
+// if (!demo.error) {
+//   demo.start();
+// } else {
+//   console.error(demo.error);
+// }
+
+
+if (document.getElementById('moshImg')) {
+  var waypoint = new Waypoint({
+    element: document.getElementById('moshImg'),
+    handler: function (direction) {
+      if (direction == "up") {
+        demo_1.reset();
+        demo_2.reset();
+        demo_3.reset();
+        demo_4.reset();
+      } else {
+        demo_1.start();
+        demo_2.start();
+        demo_3.start();
+        demo_4.start();
+      }
+      // offset: '50%'
+    }
+  })
+}
+

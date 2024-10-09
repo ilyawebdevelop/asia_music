@@ -138,10 +138,16 @@
         </div>
 
         <button class="headerFixSearchBtn" type="submit">
-          <img src="img/icons/search-purple.svg" alt="search">
+          <svg>
+            <use xlink:href="img/icons/icons.svg#search-purple"></use>
+          </svg>
+          <!-- <img src="img/icons/search-purple.svg" alt="search"> -->
         </button>
         <button class="headerFixCloseBtn" type="button">
-          <img src="img/icons/fixed-close.svg" alt="close">
+            <!-- <img src="img/icons/fixed-close.svg" alt="close"> -->
+            <svg>
+              <use xlink:href="img/icons/icons.svg#fixed-close"></use>
+            </svg>
         </button>
       </div>
     </div>
@@ -185,10 +191,10 @@
   </div>
 
 </section>
-      <div class="introTitle color--white fw-bold sectHead">
+      <div class="introTitle color--white fw-bold sectHead" data-aos="fade-up">
         Производство
       </div>
-      <p class="text--lg color--white introDescr d-none d-lg-block" style="max-width: 690px;">
+      <p class="text--lg color--white introDescr d-none d-lg-block" style="max-width: 690px;" data-aos="fade-up" data-aos-delay="300">
         Наша фабрика располагается в г. Иркутске, и фортепианный цех насчитывает 4 500 кв. м. площадей, оснащенных
         современными станками и необходимым технологическим оборудованием. Мы извлекаем преимущество из местоположения
         своей фабрики. Особое внимание уделяется изготовлению футора, материалом для которого служат твёрдые породы
@@ -215,7 +221,7 @@
     </p>
   </div>
 </section>
-				<section class="sect mosh pb-0">
+				<section class="sect mosh pb-0" id="moshImg">
   <div class="container">
     <div class="row mb-2 mb-lg-5">
       <div class="col-lg-6 mb-3 mb-lg-0">
@@ -255,12 +261,13 @@
       </div>
     </div>
   </div>
-  <div class="cehaList mt-3 mt-lg-0">
+  
+  <div class="cehaList mt-3 mt-lg-0" id="cehaList">
     <div class="container">
       <div class="row">
         <div class="col-md-6 mb-2 mb-sm-4">
           <div class="cehaCard">
-            <div class="cehaCardCount color--white">
+            <div class="cehaCardCount color--white js-count-up js-count-up_1" id="js-count-up_1">
               17 700
             </div>
             <div class="cehaCardText color--white">
@@ -270,7 +277,7 @@
         </div>
         <div class="col-md-6 mb-2 mb-sm-4">
           <div class="cehaCard">
-            <div class="cehaCardCount color--white">
+            <div class="cehaCardCount color--white" id="js-count-up_2">
               65
             </div>
             <div class="cehaCardText color--white">
@@ -280,7 +287,7 @@
         </div>
         <div class="col-md-6 mb-2 mb-sm-4 mb-lg-0">
           <div class="cehaCard">
-            <div class="cehaCardCount color--white">
+            <div class="cehaCardCount color--white" id="js-count-up_3">
               9
             </div>
             <div class="cehaCardText color--white">
@@ -290,7 +297,7 @@
         </div>
         <div class="col-md-6 mb-4 mb-lg-0">
           <div class="cehaCard">
-            <div class="cehaCardCount color--white">
+            <div class="cehaCardCount color--white" id="js-count-up_4">
               420
             </div>
             <div class="cehaCardText color--white">
@@ -362,7 +369,7 @@
     </div>
     <div class="row mt-4 pt-2">
       <div class="col-md-6 col-xxl-7 mb-2 mb-md-4">
-        <div class="techCard techCardMath techCard--pink">
+        <div class="techCard techCardMath techCard--pink" data-aos="fade-up" data-aos-delay="300">
           <div class="techCardTitle color--primary text-uppercase mb-2 mb-md-3 mb-lg-4">
             Первоклассные материалы и комплектующие
           </div>
@@ -376,7 +383,7 @@
         </div>
       </div>
       <div class="col-md-6 col-xxl-5 mb-2 mb-md-4">
-        <div class="techCard techCardStandart techCard--linear">
+        <div class="techCard techCardStandart techCard--linear" data-aos="fade-up">
           <div class="techCardTitle text-uppercase mb-2 mb-md-3 mb-lg-4 color--white">
             Соответствие высоким стандартам
           </div>
@@ -388,7 +395,7 @@
         </div>
       </div>
       <div class="col-md-6 col-xxl-5 mb-2 mb-md-4">
-        <div class="techCard techCardQuality techCard--linear">
+        <div class="techCard techCardQuality techCard--linear" data-aos="fade-up">
           <div class="techCardTitle text-uppercase mb-2 mb-md-3 mb-lg-4 color--white">
             Гарантия качества от производителя
           </div>
@@ -400,7 +407,7 @@
         </div>
       </div>
       <div class="col-md-6 col-xxl-7 mb-2 mb-md-4">
-        <div class="techCard techCardService techCard--pink">
+        <div class="techCard techCardService techCard--pink" data-aos="fade-up" data-aos-delay="300">
           <div class="techCardTitle color--primary text-uppercase mb-2 mb-md-3 mb-lg-4">
             Сервисное обслуживание и доставка
           </div>
@@ -432,7 +439,7 @@
           </div>
           <div class="qualityCountList">
 
-            <div class="qualityCountItem">
+            <div class="qualityCountItem" data-aos="fade-up">
               <div class="qualityCountItemTitle mb-3">
                 1.
               </div>
@@ -441,7 +448,7 @@
               </div>
             </div><!-- /qualityCountItem -->
 
-            <div class="qualityCountItem">
+            <div class="qualityCountItem" data-aos="fade-up" data-aos-delay="200">
               <div class="qualityCountItemTitle mb-3">
                 2.
               </div>
@@ -675,7 +682,7 @@
   <div class="container">
     <div class="row mb-2 mb-md-3 mb-lg-4 pb-0 pb-lg-3">
       <div class="col-lg-6">
-        <h2 class="h2 color--primary mb-3 mb-lg-0" style="max-width: 420px;">
+        <h2 class="h2 color--primary mb-3 mb-lg-0" style="max-width: 420px;" data-aos="fade-up">
           Оформите заявку
         </h2>
       </div>

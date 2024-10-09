@@ -6,6 +6,11 @@
       object-fit: cover;
       border: 1px solid var(--light-gray);
       border-radius: 8px;
+      transition: box-shadow .2s linear;
+      &:hover {
+        box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.12);
+
+      }
       @media(max-width: 1400px){
         height: 400px;
       }
@@ -16,6 +21,5 @@
         height: 55vw;
       }
     }
-
   }
 }
