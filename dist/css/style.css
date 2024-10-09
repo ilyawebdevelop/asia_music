@@ -18198,6 +18198,12 @@ h5,
   left: 0;
   top: 0;
 }
+@media (max-width: 1199px) {
+  .aboutCardSquareImg {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .aboutCardSquare .aboutCardText--lg {
   position: relative;
@@ -18252,6 +18258,12 @@ h5,
   right: 0;
   top: 0;
 }
+@media (max-width: 1199px) {
+  .aboutCardGosImg {
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .aboutCardGosMain {
   margin-left: 30px;
@@ -18300,6 +18312,12 @@ h5,
   position: absolute;
   right: 0;
   top: 0;
+}
+@media (max-width: 1199px) {
+  .aboutCardYearImg {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .aboutCardPiano {
